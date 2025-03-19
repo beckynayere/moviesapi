@@ -20,7 +20,7 @@ public class Movie {
 
     private ObjectId id;
 
-    private String imbdID;
+    private String imdbID;
 
     private String title;
 
@@ -32,10 +32,11 @@ public class Movie {
 
     private List <String> genres;
 
-    private List <String> backcdrops;
+    private List <String> backdrops;
 
     @DocumentReference
-    private List <String> reviewId;
+//    private List <String> reviewId;
+    private List<Review> reviews;
 
 
 }

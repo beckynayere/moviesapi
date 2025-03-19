@@ -20,8 +20,6 @@ public class MovieController {
     public MovieController(MovieService service) {  // Inject service
         this.service = service;
     }
-//    @Autowired
-//    private MovieService service;
 
     @GetMapping
     public ResponseEntity<List<Movie>> getMovies() {
